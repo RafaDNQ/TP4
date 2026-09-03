@@ -1,7 +1,6 @@
 package tp4;
 
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class Alumno {
     private int legajo;
