@@ -17,6 +17,7 @@ public class Frame1 extends javax.swing.JFrame {
      */
     public Frame1() {
         initComponents();
+        System.out.println("A");
     }
 
     /**
