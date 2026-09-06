@@ -40,11 +40,11 @@ public class Alumno {
 
     public void agregarMateria(Materia m){
         if (materia.add(m)) {
-            System.out.println(nombre+" se incribio");
+            javax.swing.JOptionPane.showMessageDialog(null, "Se inscribió correctamente al alumno " + apellido + ", " + nombre + " en " + m.getNombre());
         }else{
-            System.out.println(nombre+" no se inscribio");
+            javax.swing.JOptionPane.showMessageDialog(null, "Error. El alumno " + apellido + ", " + nombre + " ya está inscripto en " + m.getNombre());
         }
-    }
+    } // Cambié el sout por un OptionPane
     
     public void cantidadMaterias(){
         
