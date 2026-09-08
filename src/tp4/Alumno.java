@@ -49,4 +49,9 @@ public class Alumno {
     public void cantidadMaterias(){
         
     }
+
+    @Override
+    public String toString() {
+        return apellido + ", " + nombre;
+    }
 }

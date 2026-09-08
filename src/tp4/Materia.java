@@ -36,6 +36,11 @@ public class Materia {
     public void setAnio(int anio) {
         this.anio = anio;
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
     
     @Override
     public boolean equals(Object obj) {

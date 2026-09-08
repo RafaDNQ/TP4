@@ -18,12 +18,12 @@ public class VistaInscripciones extends javax.swing.JInternalFrame {
         
         cmbInscripMaterias.removeAllItems(); // Es para limpiar los combo box, por si las moscas.
         for (Materia auxMaterias : materias) {
-            cmbInscripMaterias.addItem(auxMaterias.getNombre());
+            cmbInscripMaterias.addItem(auxMaterias);
         }
         
         cmbInscripAlumnos.removeAllItems();
         for (Alumno auxAlumnos : alumnos) {
-            cmbInscripAlumnos.addItem(auxAlumnos.getApellido() + ", " + auxAlumnos.getNombre()); // Lo guarda en el combo box como "Apellido, Nombre"
+            cmbInscripAlumnos.addItem(auxAlumnos);
         }
     }
 
@@ -134,31 +134,21 @@ public class VistaInscripciones extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnInscripSalirActionPerformed
 
     private void btnInscripInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInscripInscribirActionPerformed
-        String seleccionAlumno = (String) cmbInscripAlumnos.getSelectedItem();
-        String seleccionMateria = (String) cmbInscripMaterias.getSelectedItem();
-        Materia materia = null;
+        Alumno seleccionAlumno = (Alumno) cmbInscripAlumnos.getSelectedItem();
+        Materia seleccionMateria = (Materia) cmbInscripMaterias.getSelectedItem();
         
-        for (Materia auxMaterias : VistaPrincipal.listadoMaterias) {
-            if (auxMaterias.getNombre().equalsIgnoreCase(seleccionMateria)) {
-                materia = auxMaterias;
-            }
+        if (seleccionAlumno != null && seleccionMateria != null) {
+            seleccionAlumno.agregarMateria(seleccionMateria);
         }
         
-        for (Alumno auxAlumnos : VistaPrincipal.listadoAlumnos) {
-            
-            if ((auxAlumnos.getApellido() + ", " + auxAlumnos.getNombre()).equalsIgnoreCase(seleccionAlumno)) {
-                auxAlumnos.agregarMateria(materia);
-            }
-            
-        } // No sé si hay forma más limpia de hacerlo pero funca xD
     }//GEN-LAST:event_btnInscripInscribirActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnInscripInscribir;
     private javax.swing.JButton btnInscripSalir;
-    private javax.swing.JComboBox<String> cmbInscripAlumnos;
-    private javax.swing.JComboBox<String> cmbInscripMaterias;
+    private javax.swing.JComboBox<Alumno> cmbInscripAlumnos;
+    private javax.swing.JComboBox<Materia> cmbInscripMaterias;
     private javax.swing.JLabel jblInscripAlumno;
     private javax.swing.JLabel jblInscripMateria;
     private javax.swing.JLabel jblInscripTitulo;
