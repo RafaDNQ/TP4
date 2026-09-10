@@ -13,7 +13,7 @@ import java.util.HashSet;
 public class VistaMaterias extends javax.swing.JInternalFrame {
     
     public VistaMaterias(HashSet<Materia> materias) {
-        super("Registro de alumnos", true, true, true, true);
+        super("Registro de alumnos", false, true, false, false);
         initComponents();
     }
 
@@ -26,155 +26,155 @@ public class VistaMaterias extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnMateriasNuevo = new javax.swing.JButton();
-        btnMateriasSalir = new javax.swing.JButton();
-        txtMateriasCodigo = new javax.swing.JTextField();
-        txtMateriasNombre = new javax.swing.JTextField();
-        jblMateriasTitulo = new javax.swing.JLabel();
-        txtMateriasAnio = new javax.swing.JTextField();
-        SeparatorMateriasTitulo = new javax.swing.JSeparator();
-        jblMateriasCodigo = new javax.swing.JLabel();
-        jblMateriasApellido = new javax.swing.JLabel();
-        jblMateriasNombre = new javax.swing.JLabel();
-        btnMateriasGuardar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        txtCodigo = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        lblTitulo = new javax.swing.JLabel();
+        txtAnio = new javax.swing.JTextField();
+        separatorTitulo = new javax.swing.JSeparator();
+        lblCodigo = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        btnGuardar = new javax.swing.JButton();
 
         setClosable(true);
         setMinimumSize(new java.awt.Dimension(500, 430));
         setPreferredSize(new java.awt.Dimension(500, 430));
 
-        btnMateriasNuevo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnMateriasNuevo.setText("Nuevo");
-        btnMateriasNuevo.setToolTipText("Limpia los campos ingresados pero aún no guardados.");
-        btnMateriasNuevo.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnMateriasNuevo.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnMateriasNuevo.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnMateriasNuevo.addActionListener(this::btnMateriasNuevoActionPerformed);
+        btnNuevo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnNuevo.setText("Nuevo");
+        btnNuevo.setToolTipText("Limpia los campos ingresados pero aún no guardados.");
+        btnNuevo.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnNuevo.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnNuevo.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnNuevo.addActionListener(this::btnNuevoActionPerformed);
 
-        btnMateriasSalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnMateriasSalir.setText("Salir");
-        btnMateriasSalir.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnMateriasSalir.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnMateriasSalir.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnMateriasSalir.addActionListener(this::btnMateriasSalirActionPerformed);
+        btnSalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnSalir.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnSalir.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnSalir.addActionListener(this::btnSalirActionPerformed);
 
-        txtMateriasCodigo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtCodigo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        txtMateriasNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jblMateriasTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jblMateriasTitulo.setText("Formulario de materias");
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblTitulo.setText("Alta de Materias");
 
-        txtMateriasAnio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtAnio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jblMateriasCodigo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblMateriasCodigo.setText("Código de materia:");
+        lblCodigo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblCodigo.setText("Código de materia:");
 
-        jblMateriasApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblMateriasApellido.setText("Nombre de la materia:");
+        lblApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblApellido.setText("Nombre de la materia:");
 
-        jblMateriasNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblMateriasNombre.setText("Año al que pertenece:");
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblNombre.setText("Año al que pertenece:");
 
-        btnMateriasGuardar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnMateriasGuardar.setText("Guardar");
-        btnMateriasGuardar.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnMateriasGuardar.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnMateriasGuardar.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnMateriasGuardar.addActionListener(this::btnMateriasGuardarActionPerformed);
+        btnGuardar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnGuardar.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnGuardar.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnGuardar.addActionListener(this::btnGuardarActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SeparatorMateriasTitulo, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(separatorTitulo, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMateriasGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnMateriasNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnMateriasSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jblMateriasTitulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jblMateriasCodigo)
-                    .addComponent(jblMateriasApellido)
-                    .addComponent(jblMateriasNombre))
+                    .addComponent(lblCodigo)
+                    .addComponent(lblApellido)
+                    .addComponent(lblNombre))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtMateriasAnio, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtAnio, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtMateriasCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtMateriasNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(25, Short.MAX_VALUE))
+                            .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblTitulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jblMateriasTitulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(SeparatorMateriasTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addComponent(lblTitulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(separatorTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblMateriasCodigo)
-                    .addComponent(txtMateriasCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCodigo)
+                    .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblMateriasApellido)
-                    .addComponent(txtMateriasNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellido)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblMateriasNombre)
-                    .addComponent(txtMateriasAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNombre)
+                    .addComponent(txtAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnMateriasGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnMateriasNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnMateriasSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnMateriasNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMateriasNuevoActionPerformed
-        txtMateriasCodigo.setText("");
-        txtMateriasNombre.setText("");
-        txtMateriasAnio.setText(""); // No tengo idea que deba hacer el botón "Nuevo"; lo interpreto como que "limpia" los campos de texto.
-    }//GEN-LAST:event_btnMateriasNuevoActionPerformed
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        txtCodigo.setText("");
+        txtNombre.setText("");
+        txtAnio.setText(""); // No tengo idea que deba hacer el botón "Nuevo"; lo interpreto como que "limpia" los campos de texto.
+    }//GEN-LAST:event_btnNuevoActionPerformed
 
-    private void btnMateriasSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMateriasSalirActionPerformed
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(null, "¿Está seguro que desea cerrar el alta de materias?", "Confirmación de cierre", javax.swing.JOptionPane.YES_NO_OPTION);
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(this, "¿Está seguro que desea cerrar el alta de materias?", "Confirmación de cierre", javax.swing.JOptionPane.YES_NO_OPTION);
 
         if (opcion == javax.swing.JOptionPane.YES_OPTION) {
             this.dispose();
         }
-    }//GEN-LAST:event_btnMateriasSalirActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void btnMateriasGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMateriasGuardarActionPerformed
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         int id;
         int anio;
         
         try {
             
-            id = Integer.parseInt(txtMateriasCodigo.getText().trim());
-            anio = Integer.parseInt(txtMateriasAnio.getText().trim());
+            id = Integer.parseInt(txtCodigo.getText().trim());
+            anio = Integer.parseInt(txtAnio.getText().trim());
             
         } catch (NumberFormatException number) {
             javax.swing.JOptionPane.showMessageDialog(this, "Error. Legajo y año solo aceptan números enteros.");
             return;
         }
         
-        String nombre = txtMateriasNombre.getText().trim();
+        String nombre = txtNombre.getText().trim();
         
         
         if (id <= 0 || anio <= 0 || nombre.isEmpty()) {
@@ -182,33 +182,32 @@ public class VistaMaterias extends javax.swing.JInternalFrame {
             return;
         }
         
-        Materia agregarMateria =  new Materia(id, nombre, anio); // FUNCAAAA
+        Materia agregarMateria =  new Materia(id, nombre, anio);
                 
         if (VistaPrincipal.listadoMaterias.add(agregarMateria)) {
             javax.swing.JOptionPane.showMessageDialog(this, "Se guardó la materia correctamente.");
         
-            txtMateriasCodigo.setText("");
-            txtMateriasNombre.setText("");
-            txtMateriasAnio.setText("");
+            txtCodigo.setText("");
+            txtNombre.setText("");
+            txtAnio.setText("");
             
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "Error. Esa materia ya existe en el sistema.");
         }
         
-    }//GEN-LAST:event_btnMateriasGuardarActionPerformed
-
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSeparator SeparatorMateriasTitulo;
-    private javax.swing.JButton btnMateriasGuardar;
-    private javax.swing.JButton btnMateriasNuevo;
-    private javax.swing.JButton btnMateriasSalir;
-    private javax.swing.JLabel jblMateriasApellido;
-    private javax.swing.JLabel jblMateriasCodigo;
-    private javax.swing.JLabel jblMateriasNombre;
-    private javax.swing.JLabel jblMateriasTitulo;
-    private javax.swing.JTextField txtMateriasAnio;
-    private javax.swing.JTextField txtMateriasCodigo;
-    private javax.swing.JTextField txtMateriasNombre;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel lblApellido;
+    private javax.swing.JLabel lblCodigo;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JSeparator separatorTitulo;
+    private javax.swing.JTextField txtAnio;
+    private javax.swing.JTextField txtCodigo;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }

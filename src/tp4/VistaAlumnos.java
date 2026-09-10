@@ -26,17 +26,17 @@ public class VistaAlumnos extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jblAlumnosTitulo = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jblAlumnosLegajo = new javax.swing.JLabel();
-        jblAlumnosApellido = new javax.swing.JLabel();
-        jblAlumnosNombre = new javax.swing.JLabel();
-        btnAlumnosGuardar = new javax.swing.JButton();
-        btnAlumnosNuevo = new javax.swing.JButton();
-        btnAlumnosSalir = new javax.swing.JButton();
-        txtAlumnosLegajo = new javax.swing.JTextField();
-        txtAlumnosApellido = new javax.swing.JTextField();
-        txtAlumnosNombre = new javax.swing.JTextField();
+        lblTitulo = new javax.swing.JLabel();
+        separatorTitulo = new javax.swing.JSeparator();
+        lblLegajo = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        btnGuardar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        txtLegajo = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
 
         setClosable(true);
         setTitle("Registro de alumnos");
@@ -45,120 +45,120 @@ public class VistaAlumnos extends javax.swing.JInternalFrame {
         setNormalBounds(new java.awt.Rectangle(0, 0, 584, 450));
         setPreferredSize(new java.awt.Dimension(500, 430));
 
-        jblAlumnosTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jblAlumnosTitulo.setText("Formulario de alumnos");
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblTitulo.setText("Alta de Alumnos");
 
-        jblAlumnosLegajo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblAlumnosLegajo.setText("Legajo:");
+        lblLegajo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblLegajo.setText("Legajo:");
 
-        jblAlumnosApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblAlumnosApellido.setText("Apellido:");
+        lblApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblApellido.setText("Apellido:");
 
-        jblAlumnosNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jblAlumnosNombre.setText("Nombre:");
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblNombre.setText("Nombre:");
 
-        btnAlumnosGuardar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAlumnosGuardar.setText("Guardar");
-        btnAlumnosGuardar.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosGuardar.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosGuardar.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnAlumnosGuardar.addActionListener(this::btnAlumnosGuardarActionPerformed);
+        btnGuardar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnGuardar.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnGuardar.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnGuardar.addActionListener(this::btnGuardarActionPerformed);
 
-        btnAlumnosNuevo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAlumnosNuevo.setText("Nuevo");
-        btnAlumnosNuevo.setToolTipText("Limpia los campos ingresados pero aún no guardados.");
-        btnAlumnosNuevo.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosNuevo.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosNuevo.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnAlumnosNuevo.addActionListener(this::btnAlumnosNuevoActionPerformed);
+        btnNuevo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnNuevo.setText("Nuevo");
+        btnNuevo.setToolTipText("Limpia los campos ingresados pero aún no guardados.");
+        btnNuevo.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnNuevo.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnNuevo.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnNuevo.addActionListener(this::btnNuevoActionPerformed);
 
-        btnAlumnosSalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnAlumnosSalir.setText("Salir");
-        btnAlumnosSalir.setMaximumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosSalir.setMinimumSize(new java.awt.Dimension(80, 30));
-        btnAlumnosSalir.setPreferredSize(new java.awt.Dimension(80, 30));
-        btnAlumnosSalir.addActionListener(this::btnAlumnosSalirActionPerformed);
+        btnSalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.setMaximumSize(new java.awt.Dimension(80, 30));
+        btnSalir.setMinimumSize(new java.awt.Dimension(80, 30));
+        btnSalir.setPreferredSize(new java.awt.Dimension(80, 30));
+        btnSalir.addActionListener(this::btnSalirActionPerformed);
 
-        txtAlumnosLegajo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtLegajo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        txtAlumnosApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtApellido.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        txtAlumnosNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNombre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(separatorTitulo, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAlumnosGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnAlumnosNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnAlumnosSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jblAlumnosTitulo)
+                .addComponent(lblTitulo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jblAlumnosLegajo)
-                    .addComponent(jblAlumnosApellido)
-                    .addComponent(jblAlumnosNombre))
+                    .addComponent(lblLegajo)
+                    .addComponent(lblApellido)
+                    .addComponent(lblNombre))
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtAlumnosNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAlumnosApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAlumnosLegajo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtLegajo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jblAlumnosTitulo)
+                .addComponent(lblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(separatorTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblAlumnosLegajo)
-                    .addComponent(txtAlumnosLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblLegajo)
+                    .addComponent(txtLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblAlumnosApellido)
-                    .addComponent(txtAlumnosApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellido)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jblAlumnosNombre)
-                    .addComponent(txtAlumnosNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNombre)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAlumnosGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAlumnosNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAlumnosSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAlumnosGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlumnosGuardarActionPerformed
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         int legajo;
         
         try {
             
-            legajo = Integer.parseInt(txtAlumnosLegajo.getText().trim());
+            legajo = Integer.parseInt(txtLegajo.getText().trim());
             
         } catch (NumberFormatException number) {
             javax.swing.JOptionPane.showMessageDialog(this, "Error. Legajo solo acepta números enteros.");
             return;
         }
         
-        String apellido = txtAlumnosApellido.getText().trim(); // Me traumó el scanner, le meto .trim() a todo lo que tenga entrada de datos.
-        String nombre = txtAlumnosNombre.getText().trim(); // Las dos variables son meramente para no marearme con chorizos en el if o el new
+        String apellido = txtApellido.getText().trim(); // Me traumó el scanner, le meto .trim() a todo lo que tenga entrada de datos.
+        String nombre = txtNombre.getText().trim(); // Las dos variables son meramente para no marearme con chorizos en el if o el new
         
         
         if (legajo <= 0 || apellido.isEmpty() || nombre.isEmpty()) {
@@ -171,43 +171,43 @@ public class VistaAlumnos extends javax.swing.JInternalFrame {
         if (VistaPrincipal.listadoAlumnos.add(agregarAlumno)) {
             javax.swing.JOptionPane.showMessageDialog(this, "Se guardó el alumno correctamente.");
         
-            txtAlumnosLegajo.setText("");
-            txtAlumnosApellido.setText("");
-            txtAlumnosNombre.setText("");
+            txtLegajo.setText("");
+            txtApellido.setText("");
+            txtNombre.setText("");
             
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "Error. Ese alumno ya existe en el sistema.");
         }
         
-    }//GEN-LAST:event_btnAlumnosGuardarActionPerformed
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
-    private void btnAlumnosSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlumnosSalirActionPerformed
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(null, "¿Está seguro que desea salir del alta de alumnos?", "Confirmación de cierre", javax.swing.JOptionPane.YES_NO_OPTION); // Que elegancia la de Francia.
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(this, "¿Está seguro que desea salir del alta de alumnos?", "Confirmación de cierre", javax.swing.JOptionPane.YES_NO_OPTION);
 
         if (opcion == javax.swing.JOptionPane.YES_OPTION) {
             this.dispose();
         }
         
-    }//GEN-LAST:event_btnAlumnosSalirActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void btnAlumnosNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlumnosNuevoActionPerformed
-        txtAlumnosLegajo.setText("");
-        txtAlumnosApellido.setText("");
-        txtAlumnosNombre.setText(""); // No tengo idea que deba hacer el botón "Nuevo"; lo interpreto como que "limpia" los campos de texto.
-    }//GEN-LAST:event_btnAlumnosNuevoActionPerformed
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        txtLegajo.setText("");
+        txtApellido.setText("");
+        txtNombre.setText(""); // No tengo idea que deba hacer el botón "Nuevo"; lo interpreto como que "limpia" los campos de texto.
+    }//GEN-LAST:event_btnNuevoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAlumnosGuardar;
-    private javax.swing.JButton btnAlumnosNuevo;
-    private javax.swing.JButton btnAlumnosSalir;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel jblAlumnosApellido;
-    private javax.swing.JLabel jblAlumnosLegajo;
-    private javax.swing.JLabel jblAlumnosNombre;
-    private javax.swing.JLabel jblAlumnosTitulo;
-    private javax.swing.JTextField txtAlumnosApellido;
-    private javax.swing.JTextField txtAlumnosLegajo;
-    private javax.swing.JTextField txtAlumnosNombre;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel lblApellido;
+    private javax.swing.JLabel lblLegajo;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JSeparator separatorTitulo;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtLegajo;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }

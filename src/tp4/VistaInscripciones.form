@@ -28,29 +28,29 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="separatorInscripTitulo" alignment="1" max="32767" attributes="0"/>
+          <Component id="separatorTitulo" alignment="1" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace pref="109" max="32767" attributes="0"/>
-              <Component id="jblInscripTitulo" min="-2" max="-2" attributes="0"/>
+              <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="109" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="btnInscripInscribir" min="-2" max="-2" attributes="0"/>
+              <Component id="btnInscribir" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnInscripSalir" min="-2" max="-2" attributes="0"/>
+              <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jblInscripAlumno" min="-2" max="-2" attributes="0"/>
-                  <Component id="jblInscripMateria" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAlumno" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMateria" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cmbInscripAlumnos" min="-2" pref="216" max="-2" attributes="0"/>
-                  <Component id="cmbInscripMaterias" min="-2" pref="162" max="-2" attributes="0"/>
+                  <Component id="cmbAlumnos" min="-2" pref="216" max="-2" attributes="0"/>
+                  <Component id="cmbMaterias" min="-2" pref="162" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -60,23 +60,23 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Component id="jblInscripTitulo" min="-2" max="-2" attributes="0"/>
+              <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="separatorInscripTitulo" min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="separatorTitulo" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jblInscripMateria" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cmbInscripMaterias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMateria" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmbMaterias" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jblInscripAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cmbInscripAlumnos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmbAlumnos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="110" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnInscripInscribir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnInscripSalir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnInscribir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSalir" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
           </Group>
@@ -84,7 +84,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="btnInscripInscribir">
+    <Component class="javax.swing.JButton" name="btnInscribir">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -102,10 +102,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInscripInscribirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInscribirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnInscripSalir">
+    <Component class="javax.swing.JButton" name="btnSalir">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -122,10 +122,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInscripSalirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jblInscripTitulo">
+    <Component class="javax.swing.JLabel" name="lblTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -133,9 +133,9 @@
         <Property name="text" type="java.lang.String" value="Formulario de inscripci&#xf3;n"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSeparator" name="separatorInscripTitulo">
+    <Component class="javax.swing.JSeparator" name="separatorTitulo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jblInscripMateria">
+    <Component class="javax.swing.JLabel" name="lblMateria">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -143,7 +143,7 @@
         <Property name="text" type="java.lang.String" value="Elija una materia:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jblInscripAlumno">
+    <Component class="javax.swing.JLabel" name="lblAlumno">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -151,7 +151,7 @@
         <Property name="text" type="java.lang.String" value="Elija un alumno;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cmbInscripMaterias">
+    <Component class="javax.swing.JComboBox" name="cmbMaterias">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="0"/>
@@ -161,7 +161,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Materia&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cmbInscripAlumnos">
+    <Component class="javax.swing.JComboBox" name="cmbAlumnos">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="0"/>
