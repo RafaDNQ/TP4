@@ -44,6 +44,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jMenuItemMateria = new javax.swing.JMenuItem();
         jmRegistro = new javax.swing.JMenu();
         jMenuItemRegistro = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuSalir = new javax.swing.JMenu();
         jMenuItemSalir = new javax.swing.JMenuItem();
 
@@ -107,6 +109,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         NavigatorMenu.add(jmRegistro);
 
+        jMenu2.setText("Mostrar");
+
+        jMenuItem1.setText("Mostrar");
+        jMenuItem1.addActionListener(this::jMenuItem1ActionPerformed);
+        jMenu2.add(jMenuItem1);
+
+        NavigatorMenu.add(jMenu2);
+
         jMenuSalir.setText("Salir");
 
         jMenuItemSalir.setText("Salir");
@@ -167,6 +177,15 @@ public class VistaPrincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemSalirActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        dtpEscritorio.removeAll();
+        dtpEscritorio.repaint();
+        VistaMostrar vm = new VistaMostrar();
+        vm.setVisible(true);
+        dtpEscritorio.add(vm);
+        dtpEscritorio.moveToFront(vm);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -220,6 +239,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane dtpEscritorio;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItemAlumno;
     private javax.swing.JMenuItem jMenuItemMateria;
     private javax.swing.JMenuItem jMenuItemRegistro;

@@ -38,6 +38,10 @@ public class Alumno {
         this.nombre = nombre;
     }
 
+    public HashSet<Materia> getMateria() {
+        return materia;
+    }
+    
     public void agregarMateria(Materia m){
         if (materia.add(m)) {
             javax.swing.JOptionPane.showMessageDialog(null, "Se inscribió correctamente al alumno " + apellido + ", " + nombre + " en " + m.getNombre());
